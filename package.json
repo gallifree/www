@@ -4,10 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "vike dev",
-    "build": "node scripts-check-i18n.mjs && vike build",
+    "build": "bun scripts-check-i18n.mjs && vike build",
     "preview": "vike preview",
     "typecheck": "tsc --noEmit",
-    "check:i18n": "node scripts-check-i18n.mjs"
+    "check:i18n": "bun scripts-check-i18n.mjs"
   },
   "dependencies": {
     "i18next": "^27.2.4",

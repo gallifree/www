@@ -3,9 +3,9 @@
 Website of [Gallifree](https://github.com/gallifree). Vike + React + motion + i18next (EN, FR, ZH, ES, PT, DE), prerendered to static HTML.
 
 ```sh
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # checks translations, outputs dist/client
+bun install
+bun run dev      # http://localhost:3000
+bun run build    # checks translations, outputs dist/client
 ```
 
 Deploys to GitHub Pages on every push to `main` (`.github/workflows/deploy.yml`).
