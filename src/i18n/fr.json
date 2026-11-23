@@ -1,0 +1,23 @@
+{
+  "nav": { "projects": "Projets", "language": "Langue", "theme": "Changer de thème" },
+  "hero": {
+    "title": "Des logiciels libres et open source, faits avec soin.",
+    "subtitle": "Gallifree est un studio indépendant français qui crée des outils open source — surtout en Rust — pour vos appareils, votre réseau et vos bricolages du quotidien.",
+    "cta": "Découvrir les projets"
+  },
+  "pillars": {
+    "open": { "title": "Open source", "text": "Chaque ligne de code est publique sur GitHub. Lisez-la, forkez-la, améliorez-la." },
+    "rust": { "title": "Écrit en Rust", "text": "Des logiciels rapides, sûrs en mémoire et légers pour votre matériel." },
+    "own": { "title": "Chez vous", "text": "Auto-hébergeables et locaux d'abord : vos données restent sur vos machines." }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Ce que nous construisons en ce moment.",
+    "source": "Voir le code",
+    "exposr": "Un tunnel inverse TCP/UDP auto-hébergé avec une interface d'administration web. Exposez des services derrière un NAT via votre propre serveur.",
+    "rustdeck": "Un contrôleur scriptable en Lua pour les pads FIFINE Ampligame D6 et Stream Deck, avec une interface graphique et une TUI.",
+    "rustart": "Un lanceur Android en Rust/egui pour le Galaxy Z Flip, sur les deux écrans, avec un serveur MCP intégré."
+  },
+  "footer": { "copy": "© {{year}} Gallifree Softwares · Fabriqué en France", "github": "Open source sur GitHub" },
+  "error": { "notFound": "Cette page est sortie de son orbite.", "home": "Retour à l'accueil" }
+}

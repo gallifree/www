@@ -1,0 +1,31 @@
+{
+  "name": "gallifree-www",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vike dev",
+    "build": "node scripts-check-i18n.mjs && vike build",
+    "preview": "vike preview",
+    "typecheck": "tsc --noEmit",
+    "check:i18n": "node scripts-check-i18n.mjs"
+  },
+  "dependencies": {
+    "i18next": "^27.2.4",
+    "motion": "^14.14.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-i18next": "^18.0.3",
+    "vike": "^0.4.270",
+    "vike-react": "^0.6.32"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^7.0.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.5",
+    "@tailwindcss/vite": "^4.3.5",
+    "daisyui": "^5.8.2"
+  }
+}

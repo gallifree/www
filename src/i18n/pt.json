@@ -1,0 +1,23 @@
+{
+  "nav": { "projects": "Projetos", "language": "Idioma", "theme": "Alternar tema" },
+  "hero": {
+    "title": "Software livre e de código aberto, feito com cuidado.",
+    "subtitle": "A Gallifree é um estúdio independente da França que cria ferramentas de código aberto — principalmente em Rust — para os seus dispositivos, a sua rede e os seus projetos do dia a dia.",
+    "cta": "Explorar projetos"
+  },
+  "pillars": {
+    "open": { "title": "Código aberto", "text": "Cada linha de código é pública no GitHub. Leia, faça um fork, melhore." },
+    "rust": { "title": "Feito em Rust", "text": "Software rápido e seguro em memória, leve para o seu hardware." },
+    "own": { "title": "Sob o seu controle", "text": "Auto-hospedável e local em primeiro lugar: os seus dados ficam nas suas máquinas." }
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "O que estamos construindo agora.",
+    "source": "Ver código",
+    "exposr": "Um túnel reverso TCP/UDP auto-hospedado com interface web de administração. Exponha serviços atrás de NAT pelo seu próprio servidor.",
+    "rustdeck": "Um controlador programável em Lua para os pads FIFINE Ampligame D6 e Stream Deck, com GUI e TUI.",
+    "rustart": "Um launcher Android em Rust/egui para o Galaxy Z Flip, nas duas telas, com um servidor MCP integrado."
+  },
+  "footer": { "copy": "© {{year}} Gallifree Softwares · Feito na França", "github": "Código aberto no GitHub" },
+  "error": { "notFound": "Esta página saiu de órbita.", "home": "Voltar ao início" }
+}

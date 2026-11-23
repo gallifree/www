@@ -1,0 +1,23 @@
+{
+  "nav": { "projects": "项目", "language": "语言", "theme": "切换主题" },
+  "hero": {
+    "title": "用心打造的自由开源软件。",
+    "subtitle": "Gallifree 是一家来自法国的独立工作室，主要使用 Rust 为你的设备、网络和日常折腾打造开源工具。",
+    "cta": "浏览项目"
+  },
+  "pillars": {
+    "open": { "title": "开源", "text": "每一行代码都公开在 GitHub 上。阅读它、Fork 它、改进它。" },
+    "rust": { "title": "Rust 构建", "text": "快速、内存安全，对硬件资源占用极低。" },
+    "own": { "title": "由你掌控", "text": "可自托管、本地优先：你的数据始终留在你自己的机器上。" }
+  },
+  "projects": {
+    "title": "项目",
+    "subtitle": "我们正在打造的作品。",
+    "source": "查看源码",
+    "exposr": "带有 Web 管理界面的自托管 TCP/UDP 反向隧道。通过你自己的服务器暴露 NAT 后的服务。",
+    "rustdeck": "适用于 FIFINE Ampligame D6 和 Stream Deck 宏键盘的 Lua 可编程控制器，提供 GUI 和 TUI。",
+    "rustart": "为 Galaxy Z Flip 打造的 Rust/egui Android 启动器，支持内外双屏，并内置 MCP 服务器。"
+  },
+  "footer": { "copy": "© {{year}} Gallifree Softwares · 法国制造", "github": "在 GitHub 上开源" },
+  "error": { "notFound": "此页面已偏离轨道。", "home": "返回首页" }
+}
