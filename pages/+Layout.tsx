@@ -7,7 +7,7 @@ import { Icon } from "../src/components/Icon";
 import { LanguageSelect, ThemeToggle } from "../src/components/Prefs";
 import { detectLanguage } from "../src/i18n";
 
-import { GITHUB } from "../src/site";
+import { GITHUB, YOUTUBE } from "../src/site";
 
 export default function Layout({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
@@ -29,6 +29,9 @@ export default function Layout({ children }: { children: ReactNode }) {
           <a href={GITHUB} className="btn btn-ghost btn-sm btn-square" aria-label="GitHub">
             <Icon name="github" className="size-4" />
           </a>
+          <a href={YOUTUBE} className="btn btn-ghost btn-sm btn-square" aria-label="YouTube">
+            <Icon name="youtube" className="size-4" />
+          </a>
         </nav>
       </header>
       <main className="flex-1">{children}</main>
@@ -36,6 +39,10 @@ export default function Layout({ children }: { children: ReactNode }) {
         {t("footer.copy", { year: new Date().getFullYear() })} ·{" "}
         <a href={GITHUB} className="link link-hover">
           {t("footer.github")}
+        </a>{" "}
+        ·{" "}
+        <a href={YOUTUBE} className="link link-hover">
+          YouTube
         </a>
       </footer>
     </div>

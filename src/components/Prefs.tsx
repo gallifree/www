@@ -8,7 +8,7 @@ export function LanguageSelect() {
   const { t, i18n } = useTranslation();
   return (
     <label className="flex items-center gap-1">
-      <Icon name="globe" className="size-4 opacity-70" />
+      <Icon name="globe" className="hidden size-4 opacity-70 sm:block" />
       <select
         className="select select-ghost select-sm w-auto"
         value={i18n.resolvedLanguage}
