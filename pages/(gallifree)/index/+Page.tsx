@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
-import { Icon, type IconName } from "../../src/components/Icon";
-import { PROJECTS } from "../../src/projects";
-import { GITHUB } from "../../src/site";
+import { Icon, type IconName } from "../../../src/components/Icon";
+import { PROJECTS } from "../../../src/projects";
+import { GITHUB } from "../../../src/site";
 
 const PILLARS: { key: string; icon: IconName }[] = [
   { key: "open", icon: "code" },

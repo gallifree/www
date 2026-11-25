@@ -9,7 +9,7 @@ const locales = readdirSync("src/i18n").filter((f) => f.endsWith(".json")).map((
 const en = load("en");
 const files = (d) => readdirSync(d).flatMap((f) => (statSync(join(d, f)).isDirectory() ? files(join(d, f)) : [join(d, f)]));
 const used = new Set();
-for (const f of [...files("pages"), ...files("src")].filter((f) => /\.tsx?$/.test(f))) {
+for (const f of [...files("pages/(gallifree)"), ...files("src")].filter((f) => /\.tsx?$/.test(f))) {
   for (const m of readFileSync(f, "utf8").matchAll(/\bt\(\s*"([a-zA-Z0-9_.]+)"/g)) used.add(m[1]);
 }
 let bad = 0;

@@ -1,13 +1,13 @@
-import "../src/style.css";
-import "../src/i18n";
+import "../../src/style.css";
+import "../../src/i18n";
 
 import { useEffect, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import { Icon } from "../src/components/Icon";
-import { LanguageSelect, ThemeToggle } from "../src/components/Prefs";
-import { detectLanguage } from "../src/i18n";
+import { Icon } from "../../src/components/Icon";
+import { LanguageSelect, ThemeToggle } from "../../src/components/Prefs";
+import { detectLanguage } from "../../src/i18n";
 
-import { GITHUB, YOUTUBE } from "../src/site";
+import { GITHUB, YOUTUBE } from "../../src/site";
 
 export default function Layout({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
