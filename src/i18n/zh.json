@@ -29,6 +29,9 @@
     "exposr": "带有 Web 管理界面的自托管 TCP/UDP 反向隧道。通过你自己的服务器暴露 NAT 后的服务。",
     "rustdeck": "适用于 FIFINE Ampligame D6 和 Stream Deck 宏键盘的 Lua 可编程控制器，提供 GUI 和 TUI。",
     "rustart": "为 Galaxy Z Flip 打造的 Rust/egui Android 启动器，支持内外双屏，并内置 MCP 服务器。",
+    "dicturs": "桌面离线语音命令：说出关键词即可运行对应的 shell 命令。基于 whisper.cpp 的语音识别，提供命令行、终端界面和桌面应用。",
+    "llegion": "快速的原生 Ollama 控制面板：通过桌面应用或终端界面运行、监控、测试并保护你的本地模型。",
+    "pimpbox-rgb": "通过桌面应用或终端界面控制 OpenRGB 灯效：设备实时预览、逐颗 LED 上色、灯区与配置方案。",
     "more": "了解更多"
   },
   "footer": {

@@ -62,3 +62,10 @@ cd android && ./gradlew installDebug`,
 }[];
 
 export type ProjectName = (typeof PROJECTS)[number]["name"];
+
+// Projects with their own site under pages/<name>/ (moved from their repos): home-page card only.
+export const SITES = [
+  { name: "dicturs", tags: ["Rust", "whisper.cpp", "GUI", "TUI"] },
+  { name: "llegion", tags: ["Rust", "Ollama", "egui", "ratatui"] },
+  { name: "pimpbox-rgb", tags: ["Rust", "OpenRGB", "GUI", "TUI"] },
+] as const;

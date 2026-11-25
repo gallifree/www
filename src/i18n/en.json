@@ -29,6 +29,9 @@
     "exposr": "A self-hosted TCP/UDP reverse tunnel with an admin web UI. Expose services behind NAT through your own server.",
     "rustdeck": "A Lua-scriptable controller for FIFINE Ampligame D6 and Stream Deck macro pads, with both a GUI and a TUI.",
     "rustart": "A Rust/egui Android launcher for the Galaxy Z Flip, covering both screens, with a built-in MCP server.",
+    "dicturs": "Offline voice commands for your desktop: say a keyword and it runs your shell command. Speech recognition with whisper.cpp, as a CLI, a TUI and a desktop app.",
+    "llegion": "A fast, native control panel for Ollama: run, monitor, benchmark and secure your local models from a desktop app or a terminal UI.",
+    "pimpbox-rgb": "Control your OpenRGB lighting from a desktop app or a terminal UI: live device previews, LED painting, zones and profiles.",
     "more": "Learn more"
   },
   "footer": {

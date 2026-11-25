@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 import { Icon, type IconName } from "../../../src/components/Icon";
-import { PROJECTS } from "../../../src/projects";
+import { PROJECTS, SITES } from "../../../src/projects";
 import { GITHUB } from "../../../src/site";
 
 const PILLARS: { key: string; icon: IconName }[] = [
@@ -83,7 +83,7 @@ export default function Page() {
             {t("projects.subtitle")}
           </motion.p>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {PROJECTS.map((p, i) => (
+            {[...PROJECTS, ...SITES].map((p, i) => (
               <motion.a
                 key={p.name}
                 href={`/${p.name}`}
