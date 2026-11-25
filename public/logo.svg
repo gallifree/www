@@ -10,13 +10,11 @@
       <stop offset="1" stop-color="#9f1239"/>
     </radialGradient>
   </defs>
-  <!-- A nod to Gallifrey: a burnt-orange world under twin suns, with a tiny blue police box tumbling through, circled by a time-vortex "G"
-       with marks inspired by circular Gallifreyan-style script. Original artwork. -->
+  <!-- A nod to Gallifrey: a burnt-orange world under twin suns, with a tiny blue police box tumbling through, circled by a time-vortex "G".
+       Original artwork. -->
   <path d="M50.38 13.62A26 26 0 1 0 58 32H46" stroke="url(#vortex)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="13.6" cy="50.4" r="5" stroke="url(#vortex)" stroke-width="1.6" fill="none"/>
-  <circle cx="13.6" cy="50.4" r="1.4" fill="#06b6d4"/>
   <circle cx="32" cy="32" r="11" fill="url(#planet)"/>
-  <g transform="translate(15.2 31) rotate(-14)">
+  <g transform="translate(15.2 31) rotate(-14) scale(0.333)">
     <rect x="-0.55" y="-5.3" width="1.1" height="1" rx="0.3" fill="#fde68a"/>
     <rect x="-2.5" y="-4.4" width="5" height="0.8" rx="0.2" fill="#1e3a8a"/>
     <rect x="-2.2" y="-3.7" width="4.4" height="8.2" fill="#2563eb" stroke="#1e3a8a" stroke-width="0.4"/>
