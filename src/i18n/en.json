@@ -32,6 +32,7 @@
     "dicturs": "Offline voice commands for your desktop: say a keyword and it runs your shell command. Speech recognition with whisper.cpp, as a CLI, a TUI and a desktop app.",
     "llegion": "A fast, native control panel for Ollama: run, monitor, benchmark and secure your local models from a desktop app or a terminal UI.",
     "pimpbox-rgb": "Control your OpenRGB lighting from a desktop app or a terminal UI: live device previews, LED painting, zones and profiles.",
+    "rust-agents": "A self-hosted AI agent platform with no Python: a Rust backend, a React web desktop and an OpenAI-compatible LLM gateway, shipped with Docker Compose.",
     "more": "Learn more"
   },
   "footer": {
@@ -123,6 +124,28 @@
     },
     "shots": {
       "0": "rustart home screen with an app grid and a search bar"
+    }
+  },
+  "rust-agents": {
+    "tagline": "Your own AI agents, on your own server.",
+    "intro": "rust-agents is a self-hosted AI agent platform rewritten from scratch with no Python: a Rust backend (axum, GraphQL), a React web desktop and live channels where agents answer you. It runs with Docker Compose on x86_64 and arm64. Work in progress: milestone 4 of the roadmap is done.",
+    "features": {
+      "gateway": {
+        "title": "LLM gateway",
+        "text": "Add any OpenAI-compatible provider (OpenAI, Anthropic, OpenRouter, Ollama, vLLM, llama.cpp…) and call it through one /v1 API with your own keys. Token usage is recorded per user and model."
+      },
+      "agents": {
+        "title": "Agents and channels",
+        "text": "Give agents a model and instructions, then talk to them in shared or private channels. Replies, messages and typing indicators arrive live over GraphQL subscriptions."
+      },
+      "security": {
+        "title": "Secure by design",
+        "text": "A master key that never touches the database, encrypted and expiring IDs, revocable sessions, and API keys and agent tokens stored hashed."
+      },
+      "selfhost": {
+        "title": "Self-hosted",
+        "text": "One Docker Compose stack: Postgres, Valkey, Typesense and S3 storage with Garage. Runs on a server or a small arm64 board."
+      }
     }
   }
 }

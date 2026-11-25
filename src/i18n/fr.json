@@ -32,6 +32,7 @@
     "dicturs": "Des commandes vocales hors ligne pour votre bureau : dites un mot-clé et votre commande shell s'exécute. Reconnaissance vocale avec whisper.cpp, en CLI, TUI et application de bureau.",
     "llegion": "Un panneau de contrôle natif et rapide pour Ollama : lancez, surveillez, mesurez et sécurisez vos modèles locaux depuis une application de bureau ou un terminal.",
     "pimpbox-rgb": "Pilotez votre éclairage OpenRGB depuis une application de bureau ou un terminal : aperçu en direct, peinture des LED, zones et profils.",
+    "rust-agents": "Une plateforme d'agents IA auto-hébergée, sans Python : backend Rust, bureau web React et passerelle LLM compatible OpenAI, livrée avec Docker Compose.",
     "more": "En savoir plus"
   },
   "footer": {
@@ -123,6 +124,28 @@
     },
     "shots": {
       "0": "Écran d'accueil de rustart avec une grille d'applis et une barre de recherche"
+    }
+  },
+  "rust-agents": {
+    "tagline": "Vos agents IA, sur votre propre serveur.",
+    "intro": "rust-agents est une plateforme d'agents IA auto-hébergée, réécrite de zéro sans Python : un backend Rust (axum, GraphQL), un bureau web React et des canaux en direct où les agents vous répondent. Elle tourne avec Docker Compose sur x86_64 et arm64. En cours de développement : l'étape 4 de la feuille de route est terminée.",
+    "features": {
+      "gateway": {
+        "title": "Passerelle LLM",
+        "text": "Ajoutez n'importe quel fournisseur compatible OpenAI (OpenAI, Anthropic, OpenRouter, Ollama, vLLM, llama.cpp…) et appelez-le via une seule API /v1 avec vos propres clés. La consommation de tokens est comptée par utilisateur et par modèle."
+      },
+      "agents": {
+        "title": "Agents et canaux",
+        "text": "Donnez à vos agents un modèle et des instructions, puis discutez avec eux dans des canaux partagés ou privés. Réponses, messages et indicateurs de saisie arrivent en direct via les abonnements GraphQL."
+      },
+      "security": {
+        "title": "Sécurisé par conception",
+        "text": "Une clé maîtresse qui ne touche jamais la base de données, des identifiants chiffrés qui expirent, des sessions révocables, et des clés d'API et jetons d'agent stockés hachés."
+      },
+      "selfhost": {
+        "title": "Auto-hébergé",
+        "text": "Une seule pile Docker Compose : Postgres, Valkey, Typesense et stockage S3 avec Garage. Fonctionne sur un serveur ou une petite carte arm64."
+      }
     }
   }
 }

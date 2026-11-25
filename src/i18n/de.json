@@ -32,6 +32,7 @@
     "dicturs": "Offline-Sprachbefehle für deinen Desktop: Sag ein Stichwort und dein Shell-Befehl läuft. Spracherkennung mit whisper.cpp, als CLI, TUI und Desktop-App.",
     "llegion": "Ein schnelles, natives Kontrollpanel für Ollama: lokale Modelle per Desktop-App oder Terminal-Oberfläche starten, überwachen, benchmarken und absichern.",
     "pimpbox-rgb": "Steuere deine OpenRGB-Beleuchtung per Desktop-App oder Terminal-Oberfläche: Live-Vorschau, LED-Malerei, Zonen und Profile.",
+    "rust-agents": "Eine selbst gehostete KI-Agenten-Plattform ohne Python: Rust-Backend, React-Web-Desktop und ein OpenAI-kompatibles LLM-Gateway, ausgeliefert mit Docker Compose.",
     "more": "Mehr erfahren"
   },
   "footer": {
@@ -123,6 +124,28 @@
     },
     "shots": {
       "0": "rustart-Startbildschirm mit App-Raster und Suchleiste"
+    }
+  },
+  "rust-agents": {
+    "tagline": "Deine eigenen KI-Agenten, auf deinem eigenen Server.",
+    "intro": "rust-agents ist eine selbst gehostete KI-Agenten-Plattform, von Grund auf ohne Python neu geschrieben: ein Rust-Backend (axum, GraphQL), ein React-Web-Desktop und Live-Kanäle, in denen dir Agenten antworten. Läuft mit Docker Compose auf x86_64 und arm64. In Entwicklung: Meilenstein 4 der Roadmap ist abgeschlossen.",
+    "features": {
+      "gateway": {
+        "title": "LLM-Gateway",
+        "text": "Binde jeden OpenAI-kompatiblen Anbieter ein (OpenAI, Anthropic, OpenRouter, Ollama, vLLM, llama.cpp…) und rufe ihn über eine einzige /v1-API mit deinen eigenen Schlüsseln auf. Der Token-Verbrauch wird pro Nutzer und Modell erfasst."
+      },
+      "agents": {
+        "title": "Agenten und Kanäle",
+        "text": "Gib Agenten ein Modell und Anweisungen und sprich mit ihnen in geteilten oder privaten Kanälen. Antworten, Nachrichten und Tipp-Anzeigen kommen live über GraphQL-Subscriptions."
+      },
+      "security": {
+        "title": "Sicher konzipiert",
+        "text": "Ein Hauptschlüssel, der nie in der Datenbank landet, verschlüsselte und ablaufende IDs, widerrufbare Sitzungen sowie gehasht gespeicherte API-Schlüssel und Agenten-Tokens."
+      },
+      "selfhost": {
+        "title": "Selbst gehostet",
+        "text": "Ein einziger Docker-Compose-Stack: Postgres, Valkey, Typesense und S3-Speicher mit Garage. Läuft auf einem Server oder einem kleinen arm64-Board."
+      }
     }
   }
 }

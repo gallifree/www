@@ -11,7 +11,7 @@ export function ProjectPage({ name }: { name: ProjectName }) {
   const { t } = useTranslation();
   const p = PROJECTS.find((x) => x.name === name)!;
   const [first, ...rest] = p.shots;
-  const tall = first.height > first.width;
+  const tall = !!first && first.height > first.width;
   useConfig()({ title: `${name} — Gallifree`, description: t(`projects.${name}`) });
 
   const shot = (s: (typeof p.shots)[number], i: number) => (
@@ -79,7 +79,7 @@ export function ProjectPage({ name }: { name: ProjectName }) {
           </div>
           {tall && shot(first, 0)}
         </div>
-        {!tall && <div className="mx-auto mt-14 max-w-5xl">{shot(first, 0)}</div>}
+        {first && !tall && <div className="mx-auto mt-14 max-w-5xl">{shot(first, 0)}</div>}
       </section>
 
       <section className="mx-auto max-w-5xl px-4 pb-20">

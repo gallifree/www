@@ -52,6 +52,21 @@ cargo run -p launcher_desktop
 # or install on the phone
 cd android && ./gradlew installDebug`,
   },
+  {
+    name: "rust-agents",
+    tags: ["Rust", "GraphQL", "LLM", "Docker"],
+    shots: [],
+    features: [
+      { key: "gateway", icon: "bolt" },
+      { key: "agents", icon: "activity" },
+      { key: "security", icon: "shield" },
+      { key: "selfhost", icon: "layers" },
+    ],
+    snippet: `git clone https://github.com/gallifree/rust-agents && cd rust-agents/deploy
+cp .env.example .env   # fill in the secrets (commands are in the file)
+docker compose up -d --build
+# → http://localhost:8080`,
+  },
 ] as const satisfies readonly {
   name: string;
   tags: readonly string[];
