@@ -6,6 +6,13 @@ const PATHS = {
   code: "M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16",
   bolt: "M13 2L4 14h7l-1 8 9-12h-7l1-8z",
   shield: "M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z",
+  back: "M19 12H5M11 18l-6-6 6-6",
+  plug: "M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0V8zM12 18v4",
+  activity: "M3 12h4l3-7 4 14 3-7h4",
+  layers: "M12 2l10 5-10 5L2 7l10-5zM2 17l10 5 10-5M2 12l10 5 10-5",
+  terminal: "M4 17l6-6-6-6M12 19h8",
+  phone: "M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM11 18h2",
+  search: "M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4-4",
 } as const;
 
 export type IconName = keyof typeof PATHS | "github" | "youtube";

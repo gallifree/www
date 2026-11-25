@@ -1,23 +1,125 @@
 {
-  "nav": { "projects": "Projetos", "language": "Idioma", "theme": "Alternar tema" },
+  "nav": {
+    "projects": "Projetos",
+    "language": "Idioma",
+    "theme": "Alternar tema"
+  },
   "hero": {
     "title": "Software livre e de código aberto, feito com cuidado.",
     "subtitle": "A Gallifree é um estúdio independente da França que cria ferramentas de código aberto — principalmente em Rust — para os seus dispositivos, a sua rede e os seus projetos do dia a dia.",
     "cta": "Explorar projetos"
   },
   "pillars": {
-    "open": { "title": "Código aberto", "text": "Cada linha de código é pública no GitHub. Leia, faça um fork, melhore." },
-    "rust": { "title": "Feito em Rust", "text": "Software rápido e seguro em memória, leve para o seu hardware." },
-    "own": { "title": "Sob o seu controle", "text": "Auto-hospedável e local em primeiro lugar: os seus dados ficam nas suas máquinas." }
+    "open": {
+      "title": "Código aberto",
+      "text": "Cada linha de código é pública no GitHub. Leia, faça um fork, melhore."
+    },
+    "rust": {
+      "title": "Feito em Rust",
+      "text": "Software rápido e seguro em memória, leve para o seu hardware."
+    },
+    "own": {
+      "title": "Sob o seu controle",
+      "text": "Auto-hospedável e local em primeiro lugar: os seus dados ficam nas suas máquinas."
+    }
   },
   "projects": {
     "title": "Projetos",
     "subtitle": "O que estamos construindo agora.",
-    "source": "Ver código",
     "exposr": "Um túnel reverso TCP/UDP auto-hospedado com interface web de administração. Exponha serviços atrás de NAT pelo seu próprio servidor.",
     "rustdeck": "Um controlador programável em Lua para os pads FIFINE Ampligame D6 e Stream Deck, com GUI e TUI.",
-    "rustart": "Um launcher Android em Rust/egui para o Galaxy Z Flip, nas duas telas, com um servidor MCP integrado."
+    "rustart": "Um launcher Android em Rust/egui para o Galaxy Z Flip, nas duas telas, com um servidor MCP integrado.",
+    "more": "Saiba mais"
   },
-  "footer": { "copy": "© {{year}} Gallifree Softwares · Feito na França", "github": "Código aberto no GitHub" },
-  "error": { "notFound": "Esta página saiu de órbita.", "home": "Voltar ao início" }
+  "footer": {
+    "copy": "© {{year}} Gallifree Softwares · Feito na França",
+    "github": "Código aberto no GitHub"
+  },
+  "error": {
+    "notFound": "Esta página saiu de órbita.",
+    "home": "Voltar ao início"
+  },
+  "project": {
+    "back": "Todos os projetos",
+    "source": "Ver no GitHub",
+    "start": "Começar",
+    "features": "Funcionalidades",
+    "docs": "As instruções completas de instalação estão no"
+  },
+  "exposr": {
+    "tagline": "Exponha qualquer coisa atrás de NAT, a partir do seu próprio servidor.",
+    "intro": "O exposr é um túnel reverso TCP e UDP auto-hospedado. Rode o servidor numa máquina pública e o cliente ao lado dos seus serviços, e gerencie tudo num painel web em tempo real, sem arquivos de configuração nem reinicializações.",
+    "features": {
+      "tcpudp": {
+        "title": "TCP e UDP",
+        "text": "Servidores de jogos, SSH, VPN, servidores de mídia: encaminhe qualquer porta TCP ou UDP por um túnel criptografado."
+      },
+      "live": {
+        "title": "Painel de administração ao vivo",
+        "text": "Adicione clientes e serviços pelo navegador. As mudanças chegam aos clientes na hora, com estatísticas de tráfego e conexões ao vivo."
+      },
+      "tls": {
+        "title": "TLS com fixação de certificado",
+        "text": "Tudo passa por TLS. Os clientes fixam a impressão digital do certificado do servidor, então você não precisa de uma autoridade certificadora."
+      },
+      "deploy": {
+        "title": "Fácil de implantar",
+        "text": "Distribuído como stack Docker Compose com MongoDB, pronto para o Coolify, e com imagens Docker para o cliente."
+      }
+    },
+    "shots": {
+      "0": "Painel do exposr com tráfego ao vivo, serviços e atividade recente",
+      "1": "Lista de serviços do exposr com portas públicas, endereços locais e tráfego"
+    }
+  },
+  "rustdeck": {
+    "tagline": "Seu pad de macros, programado em Lua.",
+    "intro": "O rustdeck controla os pads de macros FIFINE Ampligame D6 e Elgato Stream Deck no Linux. Organize páginas de botões num editor de desktop ou no terminal, e atribua um script Lua a cada tecla.",
+    "features": {
+      "lua": {
+        "title": "Lua em cada tecla",
+        "text": "Abra aplicativos, envie atalhos, execute scripts de shell ou mostre valores ao vivo, com ações diferentes para toque curto e longo."
+      },
+      "pages": {
+        "title": "Páginas que seguem o foco",
+        "text": "O pad troca de página conforme o aplicativo em foco: controles do navegador no Chrome, ações de terminal no seu terminal."
+      },
+      "devices": {
+        "title": "Vários dispositivos",
+        "text": "Funciona com FIFINE Ampligame D6, Elgato Stream Deck e pads de macros HID do tipo teclado."
+      },
+      "guitui": {
+        "title": "GUI e TUI",
+        "text": "Edite o layout num aplicativo de desktop feito com egui, ou direto no terminal com ratatui."
+      }
+    },
+    "shots": {
+      "0": "Editor do rustdeck mostrando uma página de botões do navegador para o FIFINE Ampligame D6"
+    }
+  },
+  "rustart": {
+    "tagline": "Um só launcher para as duas telas do seu Galaxy Z Flip.",
+    "intro": "O rustart é um launcher Android escrito em Rust com egui e wgpu, feito para o Galaxy Z Flip. Ele funciona na tela principal e na tela externa, e seu servidor MCP integrado permite que um assistente de IA organize seus aplicativos.",
+    "features": {
+      "gpu": {
+        "title": "Rust na GPU",
+        "text": "Renderizado com egui sobre wgpu para uma tela inicial fluida e leve, com uma camada mínima de Kotlin."
+      },
+      "screens": {
+        "title": "As duas telas",
+        "text": "Layouts pensados para a tela principal alongada e para a pequena tela externa."
+      },
+      "mcp": {
+        "title": "Servidor MCP integrado",
+        "text": "Uma API MCP local permite que assistentes de IA organizem seus aplicativos, ajustem o layout e mudem configurações."
+      },
+      "search": {
+        "title": "Encontre apps rápido",
+        "text": "Uma barra de busca sempre à mão, e aplicativos agrupados pelas categorias fornecidas pelo Android."
+      }
+    },
+    "shots": {
+      "0": "Tela inicial do rustart com uma grade de apps e uma barra de busca"
+    }
+  }
 }

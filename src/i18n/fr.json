@@ -1,23 +1,125 @@
 {
-  "nav": { "projects": "Projets", "language": "Langue", "theme": "Changer de thème" },
+  "nav": {
+    "projects": "Projets",
+    "language": "Langue",
+    "theme": "Changer de thème"
+  },
   "hero": {
     "title": "Des logiciels libres et open source, faits avec soin.",
     "subtitle": "Gallifree est un studio indépendant français qui crée des outils open source — surtout en Rust — pour vos appareils, votre réseau et vos bricolages du quotidien.",
     "cta": "Découvrir les projets"
   },
   "pillars": {
-    "open": { "title": "Open source", "text": "Chaque ligne de code est publique sur GitHub. Lisez-la, forkez-la, améliorez-la." },
-    "rust": { "title": "Écrit en Rust", "text": "Des logiciels rapides, sûrs en mémoire et légers pour votre matériel." },
-    "own": { "title": "Chez vous", "text": "Auto-hébergeables et locaux d'abord : vos données restent sur vos machines." }
+    "open": {
+      "title": "Open source",
+      "text": "Chaque ligne de code est publique sur GitHub. Lisez-la, forkez-la, améliorez-la."
+    },
+    "rust": {
+      "title": "Écrit en Rust",
+      "text": "Des logiciels rapides, sûrs en mémoire et légers pour votre matériel."
+    },
+    "own": {
+      "title": "Chez vous",
+      "text": "Auto-hébergeables et locaux d'abord : vos données restent sur vos machines."
+    }
   },
   "projects": {
     "title": "Projets",
     "subtitle": "Ce que nous construisons en ce moment.",
-    "source": "Voir le code",
     "exposr": "Un tunnel inverse TCP/UDP auto-hébergé avec une interface d'administration web. Exposez des services derrière un NAT via votre propre serveur.",
     "rustdeck": "Un contrôleur scriptable en Lua pour les pads FIFINE Ampligame D6 et Stream Deck, avec une interface graphique et une TUI.",
-    "rustart": "Un lanceur Android en Rust/egui pour le Galaxy Z Flip, sur les deux écrans, avec un serveur MCP intégré."
+    "rustart": "Un lanceur Android en Rust/egui pour le Galaxy Z Flip, sur les deux écrans, avec un serveur MCP intégré.",
+    "more": "En savoir plus"
   },
-  "footer": { "copy": "© {{year}} Gallifree Softwares · Fabriqué en France", "github": "Open source sur GitHub" },
-  "error": { "notFound": "Cette page est sortie de son orbite.", "home": "Retour à l'accueil" }
+  "footer": {
+    "copy": "© {{year}} Gallifree Softwares · Fabriqué en France",
+    "github": "Open source sur GitHub"
+  },
+  "error": {
+    "notFound": "Cette page est sortie de son orbite.",
+    "home": "Retour à l'accueil"
+  },
+  "project": {
+    "back": "Tous les projets",
+    "source": "Voir sur GitHub",
+    "start": "Démarrer",
+    "features": "Fonctionnalités",
+    "docs": "Les instructions d'installation complètes sont dans le"
+  },
+  "exposr": {
+    "tagline": "Exposez n'importe quoi derrière un NAT, depuis votre propre serveur.",
+    "intro": "exposr est un tunnel inverse TCP et UDP auto-hébergé. Lancez le serveur sur une machine publique et le client à côté de vos services, puis gérez tout depuis un tableau de bord web en temps réel, sans fichier de configuration ni redémarrage.",
+    "features": {
+      "tcpudp": {
+        "title": "TCP et UDP",
+        "text": "Serveurs de jeu, SSH, VPN, serveurs multimédia : redirigez n'importe quel port TCP ou UDP dans un tunnel chiffré."
+      },
+      "live": {
+        "title": "Administration en direct",
+        "text": "Ajoutez clients et services depuis votre navigateur. Les changements arrivent instantanément chez les clients, avec le trafic et les connexions en direct."
+      },
+      "tls": {
+        "title": "TLS avec épinglage de certificat",
+        "text": "Tout passe par TLS. Les clients épinglent l'empreinte du certificat du serveur : aucune autorité de certification n'est nécessaire."
+      },
+      "deploy": {
+        "title": "Simple à déployer",
+        "text": "Livré en stack Docker Compose avec MongoDB, prêt pour Coolify, avec des images Docker pour le client."
+      }
+    },
+    "shots": {
+      "0": "Tableau de bord d'exposr avec le trafic en direct, les services et l'activité récente",
+      "1": "Liste des services d'exposr avec les ports publics, les adresses locales et le trafic"
+    }
+  },
+  "rustdeck": {
+    "tagline": "Votre pad de macros, scripté en Lua.",
+    "intro": "rustdeck pilote les pads de macros FIFINE Ampligame D6 et Elgato Stream Deck sous Linux. Organisez des pages de boutons dans un éditeur graphique ou dans votre terminal, et associez un script Lua à chaque touche.",
+    "features": {
+      "lua": {
+        "title": "Du Lua sur chaque touche",
+        "text": "Lancez des applis, envoyez des raccourcis, exécutez des scripts shell ou affichez des valeurs en direct, avec des actions distinctes pour un appui court et un appui long."
+      },
+      "pages": {
+        "title": "Des pages qui suivent le focus",
+        "text": "Le pad change de page selon l'application active : contrôles du navigateur dans Chrome, actions de terminal dans votre terminal."
+      },
+      "devices": {
+        "title": "Plusieurs appareils",
+        "text": "Compatible FIFINE Ampligame D6, Elgato Stream Deck et pads de macros HID de type clavier."
+      },
+      "guitui": {
+        "title": "GUI et TUI",
+        "text": "Modifiez votre disposition dans une appli graphique en egui, ou directement dans le terminal avec ratatui."
+      }
+    },
+    "shots": {
+      "0": "Éditeur rustdeck affichant une page de boutons pour le navigateur sur le FIFINE Ampligame D6"
+    }
+  },
+  "rustart": {
+    "tagline": "Un seul lanceur pour les deux écrans de votre Galaxy Z Flip.",
+    "intro": "rustart est un lanceur Android écrit en Rust avec egui et wgpu, conçu pour le Galaxy Z Flip. Il gère l'écran principal comme l'écran externe, et son serveur MCP intégré permet à un assistant IA d'organiser vos applis.",
+    "features": {
+      "gpu": {
+        "title": "Du Rust sur le GPU",
+        "text": "Rendu avec egui sur wgpu pour un écran d'accueil fluide et léger, avec une couche Kotlin minimale."
+      },
+      "screens": {
+        "title": "Les deux écrans",
+        "text": "Des dispositions pensées pour le grand écran principal et pour le petit écran externe."
+      },
+      "mcp": {
+        "title": "Serveur MCP intégré",
+        "text": "Une API MCP locale permet aux assistants IA de trier vos applis, d'organiser l'écran et de modifier les réglages."
+      },
+      "search": {
+        "title": "Trouvez vos applis vite",
+        "text": "Une barre de recherche toujours à portée de main, et des applis regroupées selon les catégories fournies par Android."
+      }
+    },
+    "shots": {
+      "0": "Écran d'accueil de rustart avec une grille d'applis et une barre de recherche"
+    }
+  }
 }

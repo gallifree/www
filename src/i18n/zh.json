@@ -1,23 +1,125 @@
 {
-  "nav": { "projects": "项目", "language": "语言", "theme": "切换主题" },
+  "nav": {
+    "projects": "项目",
+    "language": "语言",
+    "theme": "切换主题"
+  },
   "hero": {
     "title": "用心打造的自由开源软件。",
     "subtitle": "Gallifree 是一家来自法国的独立工作室，主要使用 Rust 为你的设备、网络和日常折腾打造开源工具。",
     "cta": "浏览项目"
   },
   "pillars": {
-    "open": { "title": "开源", "text": "每一行代码都公开在 GitHub 上。阅读它、Fork 它、改进它。" },
-    "rust": { "title": "Rust 构建", "text": "快速、内存安全，对硬件资源占用极低。" },
-    "own": { "title": "由你掌控", "text": "可自托管、本地优先：你的数据始终留在你自己的机器上。" }
+    "open": {
+      "title": "开源",
+      "text": "每一行代码都公开在 GitHub 上。阅读它、Fork 它、改进它。"
+    },
+    "rust": {
+      "title": "Rust 构建",
+      "text": "快速、内存安全，对硬件资源占用极低。"
+    },
+    "own": {
+      "title": "由你掌控",
+      "text": "可自托管、本地优先：你的数据始终留在你自己的机器上。"
+    }
   },
   "projects": {
     "title": "项目",
     "subtitle": "我们正在打造的作品。",
-    "source": "查看源码",
     "exposr": "带有 Web 管理界面的自托管 TCP/UDP 反向隧道。通过你自己的服务器暴露 NAT 后的服务。",
     "rustdeck": "适用于 FIFINE Ampligame D6 和 Stream Deck 宏键盘的 Lua 可编程控制器，提供 GUI 和 TUI。",
-    "rustart": "为 Galaxy Z Flip 打造的 Rust/egui Android 启动器，支持内外双屏，并内置 MCP 服务器。"
+    "rustart": "为 Galaxy Z Flip 打造的 Rust/egui Android 启动器，支持内外双屏，并内置 MCP 服务器。",
+    "more": "了解更多"
   },
-  "footer": { "copy": "© {{year}} Gallifree Softwares · 法国制造", "github": "在 GitHub 上开源" },
-  "error": { "notFound": "此页面已偏离轨道。", "home": "返回首页" }
+  "footer": {
+    "copy": "© {{year}} Gallifree Softwares · 法国制造",
+    "github": "在 GitHub 上开源"
+  },
+  "error": {
+    "notFound": "此页面已偏离轨道。",
+    "home": "返回首页"
+  },
+  "project": {
+    "back": "全部项目",
+    "source": "在 GitHub 上查看",
+    "start": "快速开始",
+    "features": "功能特性",
+    "docs": "完整的安装说明请参阅"
+  },
+  "exposr": {
+    "tagline": "通过你自己的服务器，暴露 NAT 后的任何服务。",
+    "intro": "exposr 是一个可自托管的 TCP 和 UDP 反向隧道。在公网机器上运行服务端，在你的服务旁运行客户端，然后通过实时 Web 仪表盘管理一切，无需配置文件，无需重启。",
+    "features": {
+      "tcpudp": {
+        "title": "TCP 和 UDP",
+        "text": "游戏服务器、SSH、VPN、媒体服务器：通过加密隧道转发任意 TCP 或 UDP 端口。"
+      },
+      "live": {
+        "title": "实时管理面板",
+        "text": "在浏览器中添加客户端和服务。更改会立即同步到客户端，并实时显示流量和连接统计。"
+      },
+      "tls": {
+        "title": "TLS 与证书固定",
+        "text": "所有流量都经过 TLS。客户端固定服务器证书指纹，无需证书颁发机构。"
+      },
+      "deploy": {
+        "title": "轻松部署",
+        "text": "以包含 MongoDB 的 Docker Compose 栈发布，可直接用于 Coolify，并提供客户端 Docker 镜像。"
+      }
+    },
+    "shots": {
+      "0": "exposr 仪表盘，显示实时流量、服务和最近活动",
+      "1": "exposr 服务列表，显示公网端口、本地地址和流量"
+    }
+  },
+  "rustdeck": {
+    "tagline": "用 Lua 编写你的宏键盘。",
+    "intro": "rustdeck 在 Linux 上驱动 FIFINE Ampligame D6 和 Elgato Stream Deck 宏键盘。在桌面编辑器或终端中布置按键页面，并为每个按键编写 Lua 脚本。",
+    "features": {
+      "lua": {
+        "title": "每个按键都能运行 Lua",
+        "text": "启动应用、发送快捷键、运行 shell 脚本或显示实时数值，短按和长按可设置不同动作。"
+      },
+      "pages": {
+        "title": "页面跟随焦点",
+        "text": "根据当前聚焦的应用自动切换页面：在 Chrome 中显示浏览器控制，在终端中显示终端操作。"
+      },
+      "devices": {
+        "title": "支持多种设备",
+        "text": "支持 FIFINE Ampligame D6、Elgato Stream Deck 以及通用 HID 键盘式宏键盘。"
+      },
+      "guitui": {
+        "title": "GUI 与 TUI",
+        "text": "在基于 egui 的桌面应用中编辑布局，或直接在终端中使用 ratatui 编辑。"
+      }
+    },
+    "shots": {
+      "0": "rustdeck 编辑器，显示 FIFINE Ampligame D6 的浏览器按键页面"
+    }
+  },
+  "rustart": {
+    "tagline": "一个启动器，覆盖 Galaxy Z Flip 的两块屏幕。",
+    "intro": "rustart 是一款使用 Rust、egui 和 wgpu 编写的 Android 启动器，专为 Galaxy Z Flip 打造。它同时支持主屏和外屏，内置的 MCP 服务器还能让 AI 助手帮你整理应用。",
+    "features": {
+      "gpu": {
+        "title": "GPU 上的 Rust",
+        "text": "基于 wgpu 的 egui 渲染，主屏流畅轻量，只保留很薄的一层 Kotlin。"
+      },
+      "screens": {
+        "title": "双屏支持",
+        "text": "为细长的主屏和小巧的外屏分别设计布局。"
+      },
+      "mcp": {
+        "title": "内置 MCP 服务器",
+        "text": "本地 MCP API 让 AI 助手可以整理应用、调整布局和修改设置。"
+      },
+      "search": {
+        "title": "快速找到应用",
+        "text": "搜索栏随手可及，应用按 Android 提供的类别分组。"
+      }
+    },
+    "shots": {
+      "0": "rustart 主屏，显示应用网格和搜索栏"
+    }
+  }
 }

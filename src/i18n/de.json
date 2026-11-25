@@ -1,23 +1,125 @@
 {
-  "nav": { "projects": "Projekte", "language": "Sprache", "theme": "Design wechseln" },
+  "nav": {
+    "projects": "Projekte",
+    "language": "Sprache",
+    "theme": "Design wechseln"
+  },
   "hero": {
     "title": "Freie Open-Source-Software, mit Sorgfalt gemacht.",
     "subtitle": "Gallifree ist ein unabhängiges Studio aus Frankreich, das Open-Source-Werkzeuge entwickelt — meist in Rust — für deine Geräte, dein Netzwerk und deine täglichen Bastelprojekte.",
     "cta": "Projekte entdecken"
   },
   "pillars": {
-    "open": { "title": "Open Source", "text": "Jede Codezeile ist öffentlich auf GitHub. Lies sie, forke sie, verbessere sie." },
-    "rust": { "title": "In Rust gebaut", "text": "Schnelle, speichersichere Software, die deine Hardware schont." },
-    "own": { "title": "In deiner Hand", "text": "Selbst hostbar und local-first: deine Daten bleiben auf deinen Rechnern." }
+    "open": {
+      "title": "Open Source",
+      "text": "Jede Codezeile ist öffentlich auf GitHub. Lies sie, forke sie, verbessere sie."
+    },
+    "rust": {
+      "title": "In Rust gebaut",
+      "text": "Schnelle, speichersichere Software, die deine Hardware schont."
+    },
+    "own": {
+      "title": "In deiner Hand",
+      "text": "Selbst hostbar und local-first: deine Daten bleiben auf deinen Rechnern."
+    }
   },
   "projects": {
     "title": "Projekte",
     "subtitle": "Woran wir gerade arbeiten.",
-    "source": "Quellcode ansehen",
     "exposr": "Ein selbst gehosteter TCP/UDP-Reverse-Tunnel mit Web-Adminoberfläche. Mach Dienste hinter NAT über deinen eigenen Server erreichbar.",
     "rustdeck": "Ein per Lua skriptbarer Controller für FIFINE Ampligame D6 und Stream Deck Makro-Pads, mit GUI und TUI.",
-    "rustart": "Ein Rust/egui-Android-Launcher für das Galaxy Z Flip, für beide Displays, mit integriertem MCP-Server."
+    "rustart": "Ein Rust/egui-Android-Launcher für das Galaxy Z Flip, für beide Displays, mit integriertem MCP-Server.",
+    "more": "Mehr erfahren"
   },
-  "footer": { "copy": "© {{year}} Gallifree Softwares · Made in France", "github": "Open Source auf GitHub" },
-  "error": { "notFound": "Diese Seite ist aus der Umlaufbahn geraten.", "home": "Zur Startseite" }
+  "footer": {
+    "copy": "© {{year}} Gallifree Softwares · Made in France",
+    "github": "Open Source auf GitHub"
+  },
+  "error": {
+    "notFound": "Diese Seite ist aus der Umlaufbahn geraten.",
+    "home": "Zur Startseite"
+  },
+  "project": {
+    "back": "Alle Projekte",
+    "source": "Auf GitHub ansehen",
+    "start": "Loslegen",
+    "features": "Funktionen",
+    "docs": "Die vollständige Installationsanleitung steht in der"
+  },
+  "exposr": {
+    "tagline": "Mach alles hinter NAT erreichbar, über deinen eigenen Server.",
+    "intro": "exposr ist ein selbst gehosteter TCP- und UDP-Reverse-Tunnel. Starte den Server auf einem öffentlichen Rechner und den Client neben deinen Diensten, und verwalte alles über ein Live-Web-Dashboard, ohne Konfigurationsdateien und ohne Neustarts.",
+    "features": {
+      "tcpudp": {
+        "title": "TCP und UDP",
+        "text": "Gameserver, SSH, VPNs, Medienserver: leite jeden TCP- oder UDP-Port durch einen verschlüsselten Tunnel weiter."
+      },
+      "live": {
+        "title": "Live-Admin-Dashboard",
+        "text": "Füge Clients und Dienste im Browser hinzu. Änderungen erreichen die Clients sofort, mit Live-Statistiken zu Traffic und Verbindungen."
+      },
+      "tls": {
+        "title": "TLS mit Zertifikat-Pinning",
+        "text": "Alles läuft über TLS. Clients pinnen den Fingerabdruck des Serverzertifikats, eine Zertifizierungsstelle ist nicht nötig."
+      },
+      "deploy": {
+        "title": "Einfach bereitzustellen",
+        "text": "Kommt als Docker-Compose-Stack mit MongoDB, bereit für Coolify, plus Docker-Images für den Client."
+      }
+    },
+    "shots": {
+      "0": "exposr-Dashboard mit Live-Traffic, Diensten und letzten Aktivitäten",
+      "1": "exposr-Dienstliste mit öffentlichen Ports, lokalen Adressen und Traffic"
+    }
+  },
+  "rustdeck": {
+    "tagline": "Dein Makro-Pad, in Lua geskriptet.",
+    "intro": "rustdeck steuert die Makro-Pads FIFINE Ampligame D6 und Elgato Stream Deck unter Linux. Gestalte Tastenseiten in einem Desktop-Editor oder im Terminal und gib jeder Taste ein Lua-Skript.",
+    "features": {
+      "lua": {
+        "title": "Lua auf jeder Taste",
+        "text": "Apps starten, Tastenkürzel senden, Shell-Skripte ausführen oder Live-Werte anzeigen, mit eigenen Aktionen für kurzes und langes Drücken."
+      },
+      "pages": {
+        "title": "Seiten folgen dem Fokus",
+        "text": "Das Pad wechselt die Seite passend zur aktiven App: Browser-Steuerung in Chrome, Terminal-Aktionen in deinem Terminal."
+      },
+      "devices": {
+        "title": "Mehrere Geräte",
+        "text": "Unterstützt FIFINE Ampligame D6, Elgato Stream Deck und generische HID-Tastatur-Makro-Pads."
+      },
+      "guitui": {
+        "title": "GUI und TUI",
+        "text": "Bearbeite dein Layout in einer Desktop-App mit egui oder direkt im Terminal mit ratatui."
+      }
+    },
+    "shots": {
+      "0": "rustdeck-Editor mit einer Browser-Tastenseite für das FIFINE Ampligame D6"
+    }
+  },
+  "rustart": {
+    "tagline": "Ein Launcher für beide Displays deines Galaxy Z Flip.",
+    "intro": "rustart ist ein Android-Launcher in Rust mit egui und wgpu, gemacht für das Galaxy Z Flip. Er deckt das Hauptdisplay und das Cover-Display ab, und sein integrierter MCP-Server lässt einen KI-Assistenten deine Apps organisieren.",
+    "features": {
+      "gpu": {
+        "title": "Rust auf der GPU",
+        "text": "Mit egui auf wgpu gerendert für einen flüssigen, schlanken Startbildschirm, mit nur einer dünnen Kotlin-Schicht."
+      },
+      "screens": {
+        "title": "Beide Displays",
+        "text": "Layouts für das hohe Hauptdisplay und für das kleine Cover-Display."
+      },
+      "mcp": {
+        "title": "Integrierter MCP-Server",
+        "text": "Eine lokale MCP-API lässt KI-Assistenten deine Apps sortieren, das Layout ordnen und Einstellungen ändern."
+      },
+      "search": {
+        "title": "Apps schnell finden",
+        "text": "Eine Suchleiste immer griffbereit, und Apps nach den Kategorien gruppiert, die Android liefert."
+      }
+    },
+    "shots": {
+      "0": "rustart-Startbildschirm mit App-Raster und Suchleiste"
+    }
+  }
 }

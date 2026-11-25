@@ -1,13 +1,8 @@
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 import { Icon, type IconName } from "../../src/components/Icon";
+import { PROJECTS } from "../../src/projects";
 import { GITHUB } from "../../src/site";
-
-const PROJECTS = [
-  { name: "exposr", tags: ["Rust", "TCP/UDP", "GraphQL", "MongoDB"] },
-  { name: "rustdeck", tags: ["Rust", "Lua", "GUI", "TUI"] },
-  { name: "rustart", tags: ["Rust", "egui", "Android", "MCP"] },
-] as const;
 
 const PILLARS: { key: string; icon: IconName }[] = [
   { key: "open", icon: "code" },
@@ -91,7 +86,7 @@ export default function Page() {
             {PROJECTS.map((p, i) => (
               <motion.a
                 key={p.name}
-                href={`${GITHUB}/${p.name}`}
+                href={`/${p.name}`}
                 {...rise}
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ y: -6 }}
@@ -108,7 +103,7 @@ export default function Page() {
                     ))}
                   </div>
                   <span className="text-primary mt-4 inline-flex items-center gap-1 text-sm font-medium">
-                    {t("projects.source")} <Icon name="arrow" className="size-4" />
+                    {t("projects.more")} <Icon name="arrow" className="size-4" />
                   </span>
                 </div>
               </motion.a>

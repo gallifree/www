@@ -1,16 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="vortex" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#6366f1"/>
       <stop offset="1" stop-color="#06b6d4"/>
     </linearGradient>
-    <linearGradient id="planet" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#fbbf24"/>
-      <stop offset="1" stop-color="#e11d48"/>
-    </linearGradient>
+    <radialGradient id="planet" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fdba74"/>
+      <stop offset="0.55" stop-color="#ea580c"/>
+      <stop offset="1" stop-color="#9f1239"/>
+    </radialGradient>
   </defs>
-  <!-- An orbit drawn as a "G", a planet at its core and a moon in the gap. -->
-  <path d="M50.38 13.62A26 26 0 1 0 58 32H46" stroke="url(#ring)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- A nod to Gallifrey: a burnt-orange world with a domed citadel under twin suns, circled by a time-vortex "G"
+       with marks inspired by circular Gallifreyan-style script. Original artwork. -->
+  <path d="M16 46A19 19 0 0 1 22 15.5" stroke="url(#vortex)" stroke-width="1.4" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="18.6" cy="18.6" r="1.3" fill="url(#vortex)"/>
+  <circle cx="13.4" cy="35.5" r="1.3" fill="url(#vortex)"/>
+  <path d="M50.38 13.62A26 26 0 1 0 58 32H46" stroke="url(#vortex)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="13.6" cy="50.4" r="5" stroke="url(#vortex)" stroke-width="1.6" fill="none"/>
+  <circle cx="13.6" cy="50.4" r="1.4" fill="#06b6d4"/>
   <circle cx="32" cy="32" r="11" fill="url(#planet)"/>
-  <circle cx="56" cy="22" r="3.5" fill="#06b6d4"/>
+  <path d="M26.5 23.2A5.5 5.5 0 0 1 37.5 23.2Z" fill="#a5f3fc" fill-opacity="0.45" stroke="#cffafe" stroke-width="1.1" stroke-linejoin="round"/>
+  <circle cx="57" cy="24.8" r="3.6" fill="#fbbf24"/>
+  <circle cx="54.3" cy="18.6" r="2.4" fill="#fde68a"/>
 </svg>

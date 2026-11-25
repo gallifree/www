@@ -1,23 +1,125 @@
 {
-  "nav": { "projects": "Projects", "language": "Language", "theme": "Toggle theme" },
+  "nav": {
+    "projects": "Projects",
+    "language": "Language",
+    "theme": "Toggle theme"
+  },
   "hero": {
     "title": "Free & open-source software, crafted with care.",
     "subtitle": "Gallifree is an independent studio from France building open-source tools — mostly in Rust — for your devices, your network and your everyday tinkering.",
     "cta": "Explore projects"
   },
   "pillars": {
-    "open": { "title": "Open source", "text": "Every line of code is public on GitHub. Read it, fork it, improve it." },
-    "rust": { "title": "Built in Rust", "text": "Fast, memory-safe software that stays light on your hardware." },
-    "own": { "title": "Yours to run", "text": "Self-hostable and local-first: your data stays on your machines." }
+    "open": {
+      "title": "Open source",
+      "text": "Every line of code is public on GitHub. Read it, fork it, improve it."
+    },
+    "rust": {
+      "title": "Built in Rust",
+      "text": "Fast, memory-safe software that stays light on your hardware."
+    },
+    "own": {
+      "title": "Yours to run",
+      "text": "Self-hostable and local-first: your data stays on your machines."
+    }
   },
   "projects": {
     "title": "Projects",
     "subtitle": "What we are building right now.",
-    "source": "View source",
     "exposr": "A self-hosted TCP/UDP reverse tunnel with an admin web UI. Expose services behind NAT through your own server.",
     "rustdeck": "A Lua-scriptable controller for FIFINE Ampligame D6 and Stream Deck macro pads, with both a GUI and a TUI.",
-    "rustart": "A Rust/egui Android launcher for the Galaxy Z Flip, covering both screens, with a built-in MCP server."
+    "rustart": "A Rust/egui Android launcher for the Galaxy Z Flip, covering both screens, with a built-in MCP server.",
+    "more": "Learn more"
   },
-  "footer": { "copy": "© {{year}} Gallifree Softwares · Made in France", "github": "Open source on GitHub" },
-  "error": { "notFound": "This page drifted out of orbit.", "home": "Back home" }
+  "footer": {
+    "copy": "© {{year}} Gallifree Softwares · Made in France",
+    "github": "Open source on GitHub"
+  },
+  "error": {
+    "notFound": "This page drifted out of orbit.",
+    "home": "Back home"
+  },
+  "project": {
+    "back": "All projects",
+    "source": "View on GitHub",
+    "start": "Get started",
+    "features": "Features",
+    "docs": "Full setup instructions are in the"
+  },
+  "exposr": {
+    "tagline": "Expose anything behind NAT, from your own server.",
+    "intro": "exposr is a self-hosted TCP and UDP reverse tunnel. Run the server on a public machine and the client next to your services, then manage everything from a live web dashboard, with no config files and no restarts.",
+    "features": {
+      "tcpudp": {
+        "title": "TCP and UDP",
+        "text": "Game servers, SSH, VPNs, media servers: forward any TCP or UDP port through an encrypted tunnel."
+      },
+      "live": {
+        "title": "Live admin dashboard",
+        "text": "Add clients and services from your browser. Changes reach clients instantly, with live traffic and connection stats."
+      },
+      "tls": {
+        "title": "TLS with certificate pinning",
+        "text": "Everything runs over TLS. Clients pin the server's certificate fingerprint, so you don't need a certificate authority."
+      },
+      "deploy": {
+        "title": "Easy to deploy",
+        "text": "Ships as a Docker Compose stack with MongoDB, ready for Coolify, plus Docker images for the client."
+      }
+    },
+    "shots": {
+      "0": "exposr dashboard with live traffic, services and recent activity",
+      "1": "exposr services list with public ports, local addresses and traffic"
+    }
+  },
+  "rustdeck": {
+    "tagline": "Your macro pad, scripted in Lua.",
+    "intro": "rustdeck drives FIFINE Ampligame D6 and Elgato Stream Deck macro pads on Linux. Lay out pages of buttons in a desktop editor or in your terminal, and give every key a Lua script.",
+    "features": {
+      "lua": {
+        "title": "Lua on every key",
+        "text": "Launch apps, send shortcuts, run shell scripts or show live values, with separate actions for a press and a long press."
+      },
+      "pages": {
+        "title": "Pages that follow your focus",
+        "text": "The deck switches pages to match the focused app: browser controls in Chrome, terminal actions in your terminal."
+      },
+      "devices": {
+        "title": "Several devices",
+        "text": "Works with the FIFINE Ampligame D6, Elgato Stream Deck and generic HID keyboard macro pads."
+      },
+      "guitui": {
+        "title": "GUI and TUI",
+        "text": "Edit your layout in a desktop app built with egui, or straight from the terminal with ratatui."
+      }
+    },
+    "shots": {
+      "0": "rustdeck editor showing a browser page of buttons for the FIFINE Ampligame D6"
+    }
+  },
+  "rustart": {
+    "tagline": "One launcher for both screens of your Galaxy Z Flip.",
+    "intro": "rustart is an Android launcher written in Rust with egui and wgpu, built for the Galaxy Z Flip. It covers the main screen and the cover screen, and its built-in MCP server lets an AI assistant organise your apps.",
+    "features": {
+      "gpu": {
+        "title": "Rust on the GPU",
+        "text": "Rendered with egui on wgpu for a smooth, lightweight home screen, with only a thin Kotlin layer."
+      },
+      "screens": {
+        "title": "Both screens",
+        "text": "Layouts made for the tall main display and for the small cover screen."
+      },
+      "mcp": {
+        "title": "Built-in MCP server",
+        "text": "A local MCP API lets AI assistants sort your apps, organise your layout and change settings."
+      },
+      "search": {
+        "title": "Find apps fast",
+        "text": "A search bar always within reach, and apps grouped using the categories Android provides."
+      }
+    },
+    "shots": {
+      "0": "rustart home screen with an app grid and a search bar"
+    }
+  }
 }
