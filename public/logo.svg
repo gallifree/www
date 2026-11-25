@@ -9,26 +9,39 @@
       <stop offset="0.55" stop-color="#ea580c"/>
       <stop offset="1" stop-color="#9f1239"/>
     </radialGradient>
+    <g id="t-face">
+      <rect x="0" y="-3.7" width="4.4" height="8.2" fill="#2563eb" stroke="#1e3a8a" stroke-width="0.4"/>
+      <rect x="0.4" y="-3.4" width="3.6" height="0.8" fill="#0f172a"/>
+      <rect x="0.7" y="-2.1" width="1.2" height="1.2" fill="#dbeafe"/>
+      <rect x="2.5" y="-2.1" width="1.2" height="1.2" fill="#dbeafe"/>
+      <path d="M2.2 -2.6V4.5M0.7 1H1.9M2.5 1H3.7M0.7 2.9H1.9M2.5 2.9H3.7" stroke="#1e3a8a" stroke-width="0.35"/>
+    </g>
   </defs>
   <style>
-    .tardis { transform-box: fill-box; transform-origin: center; animation: tardis-spin 4s linear infinite; }
-    @keyframes tardis-spin { to { transform: rotate(360deg); } }
-    @media (prefers-reduced-motion: reduce) { .tardis { animation: none; } }
+    /* The police box spins like a top: two faces, one turning away (narrower, darker) while the next turns in.
+       All four sides look alike, so a quarter turn loops seamlessly. */
+    .t-a { transform: translateX(-2.2px); } .t-b { transform: scaleX(0); } .t-roof { transform: scaleX(5); }
+    .t-sb { opacity: 0.55; } .t-sa { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .t-a, .t-b, .t-roof, .t-sa, .t-sb { animation: 0.6s linear infinite; }
+      .t-a { animation-name: t-a; } .t-b { animation-name: t-b; } .t-roof { animation-name: t-roof; }
+      .t-sa { animation-name: t-sa; } .t-sb { animation-name: t-sb; }
+    }
+    @keyframes t-a { 0%{transform:translateX(-2.2px) scaleX(1)} 10%{transform:translateX(-2.517px) scaleX(0.988)} 20%{transform:translateX(-2.772px) scaleX(0.951)} 30%{transform:translateX(-2.959px) scaleX(0.891)} 40%{transform:translateX(-3.073px) scaleX(0.809)} 50%{transform:translateX(-3.111px) scaleX(0.707)} 60%{transform:translateX(-3.073px) scaleX(0.588)} 70%{transform:translateX(-2.959px) scaleX(0.454)} 80%{transform:translateX(-2.772px) scaleX(0.309)} 90%{transform:translateX(-2.517px) scaleX(0.156)} 100%{transform:translateX(-2.2px) scaleX(0)} }
+    @keyframes t-b { 0%{transform:translateX(2.2px) scaleX(0)} 10%{transform:translateX(1.829px) scaleX(0.156)} 20%{transform:translateX(1.412px) scaleX(0.309)} 30%{transform:translateX(0.961px) scaleX(0.454)} 40%{transform:translateX(0.487px) scaleX(0.588)} 50%{transform:translateX(0px) scaleX(0.707)} 60%{transform:translateX(-0.487px) scaleX(0.809)} 70%{transform:translateX(-0.961px) scaleX(0.891)} 80%{transform:translateX(-1.412px) scaleX(0.951)} 90%{transform:translateX(-1.829px) scaleX(0.988)} 100%{transform:translateX(-2.2px) scaleX(1)} }
+    @keyframes t-roof { 0%{transform:scaleX(5)} 10%{transform:scaleX(5.634)} 20%{transform:scaleX(6.144)} 30%{transform:scaleX(6.518)} 40%{transform:scaleX(6.746)} 50%{transform:scaleX(6.823)} 60%{transform:scaleX(6.746)} 70%{transform:scaleX(6.518)} 80%{transform:scaleX(6.144)} 90%{transform:scaleX(5.634)} 100%{transform:scaleX(5)} }
+    @keyframes t-sa { 0%{opacity:0} 10%{opacity:0.007} 20%{opacity:0.027} 30%{opacity:0.06} 40%{opacity:0.105} 50%{opacity:0.161} 60%{opacity:0.227} 70%{opacity:0.3} 80%{opacity:0.38} 90%{opacity:0.464} 100%{opacity:0.55} }
+    @keyframes t-sb { 0%{opacity:0.55} 10%{opacity:0.464} 20%{opacity:0.38} 30%{opacity:0.3} 40%{opacity:0.227} 50%{opacity:0.161} 60%{opacity:0.105} 70%{opacity:0.06} 80%{opacity:0.027} 90%{opacity:0.007} 100%{opacity:0} }
   </style>
   <!-- A nod to Gallifrey: a burnt-orange world under twin suns, with a tiny blue police box tumbling through, circled by a time-vortex "G".
        Original artwork. -->
   <path d="M50.38 13.62A26 26 0 1 0 58 32H46" stroke="url(#vortex)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="32" cy="32" r="11" fill="url(#planet)"/>
   <g transform="translate(15.2 31) rotate(-14) scale(0.333)">
-   <g class="tardis">
     <rect x="-0.55" y="-5.3" width="1.1" height="1" rx="0.3" fill="#fde68a"/>
-    <rect x="-2.5" y="-4.4" width="5" height="0.8" rx="0.2" fill="#1e3a8a"/>
-    <rect x="-2.2" y="-3.7" width="4.4" height="8.2" fill="#2563eb" stroke="#1e3a8a" stroke-width="0.4"/>
-    <rect x="-1.8" y="-3.4" width="3.6" height="0.8" fill="#0f172a"/>
-    <rect x="-1.5" y="-2.1" width="1.2" height="1.2" fill="#dbeafe"/>
-    <rect x="0.3" y="-2.1" width="1.2" height="1.2" fill="#dbeafe"/>
-    <path d="M0 -2.6V4.5M-1.5 1H-0.3M0.3 1H1.5M-1.5 2.9H-0.3M0.3 2.9H1.5" stroke="#1e3a8a" stroke-width="0.35"/>
-   </g>
+    <g class="t-roof"><rect x="-0.5" y="-4.4" width="1" height="0.8" fill="#1e3a8a"/></g>
+    <g class="t-a"><use href="#t-face"/><rect class="t-sa" x="0" y="-3.7" width="4.4" height="8.2" fill="#0f172a"/></g>
+    <g class="t-b"><use href="#t-face"/><rect class="t-sb" x="0" y="-3.7" width="4.4" height="8.2" fill="#0f172a"/></g>
   </g>
   <circle cx="57" cy="24.8" r="3.6" fill="#fbbf24"/>
   <circle cx="54.3" cy="18.6" r="2.4" fill="#fde68a"/>
