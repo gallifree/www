@@ -1,3 +1,3 @@
 import { ProjectPage } from "../../../src/components/ProjectPage";
 
-export default () => <ProjectPage name="rust-agents" />;
+export default () => <ProjectPage name="agents-OS" />;

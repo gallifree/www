@@ -32,7 +32,7 @@
     "dicturs": "桌面离线语音命令：说出关键词即可运行对应的 shell 命令。基于 whisper.cpp 的语音识别，提供命令行、终端界面和桌面应用。",
     "llegion": "快速的原生 Ollama 控制面板：通过桌面应用或终端界面运行、监控、测试并保护你的本地模型。",
     "pimpbox-rgb": "通过桌面应用或终端界面控制 OpenRGB 灯效：设备实时预览、逐颗 LED 上色、灯区与配置方案。",
-    "rust-agents": "无需 Python 的自托管 AI 智能体平台：Rust 后端、React 网页桌面和兼容 OpenAI 的 LLM 网关，使用 Docker Compose 部署。",
+    "agents-OS": "无需 Python 的自托管 AI 智能体平台：Rust 后端、React 网页桌面和兼容 OpenAI 的 LLM 网关，使用 Docker Compose 部署。",
     "more": "了解更多"
   },
   "footer": {
@@ -126,9 +126,9 @@
       "0": "rustart 主屏，显示应用网格和搜索栏"
     }
   },
-  "rust-agents": {
+  "agents-OS": {
     "tagline": "你自己的 AI 智能体，运行在你自己的服务器上。",
-    "intro": "rust-agents 是一个完全不用 Python、从零重写的自托管 AI 智能体平台：Rust 后端（axum、GraphQL）、React 网页桌面，以及智能体实时回复的频道。它通过 Docker Compose 运行在 x86_64 和 arm64 上。项目仍在开发中：路线图的第 4 个里程碑已完成。",
+    "intro": "agents-OS 是一个完全不用 Python、从零重写的自托管 AI 智能体平台：Rust 后端（axum、GraphQL）、React 网页桌面，以及智能体实时回复的频道。它通过 Docker Compose 运行在 x86_64 和 arm64 上。项目仍在开发中：路线图的第 4 个里程碑已完成。",
     "features": {
       "gateway": {
         "title": "LLM 网关",

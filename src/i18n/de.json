@@ -32,7 +32,7 @@
     "dicturs": "Offline-Sprachbefehle für deinen Desktop: Sag ein Stichwort und dein Shell-Befehl läuft. Spracherkennung mit whisper.cpp, als CLI, TUI und Desktop-App.",
     "llegion": "Ein schnelles, natives Kontrollpanel für Ollama: lokale Modelle per Desktop-App oder Terminal-Oberfläche starten, überwachen, benchmarken und absichern.",
     "pimpbox-rgb": "Steuere deine OpenRGB-Beleuchtung per Desktop-App oder Terminal-Oberfläche: Live-Vorschau, LED-Malerei, Zonen und Profile.",
-    "rust-agents": "Eine selbst gehostete KI-Agenten-Plattform ohne Python: Rust-Backend, React-Web-Desktop und ein OpenAI-kompatibles LLM-Gateway, ausgeliefert mit Docker Compose.",
+    "agents-OS": "Eine selbst gehostete KI-Agenten-Plattform ohne Python: Rust-Backend, React-Web-Desktop und ein OpenAI-kompatibles LLM-Gateway, ausgeliefert mit Docker Compose.",
     "more": "Mehr erfahren"
   },
   "footer": {
@@ -126,9 +126,9 @@
       "0": "rustart-Startbildschirm mit App-Raster und Suchleiste"
     }
   },
-  "rust-agents": {
+  "agents-OS": {
     "tagline": "Deine eigenen KI-Agenten, auf deinem eigenen Server.",
-    "intro": "rust-agents ist eine selbst gehostete KI-Agenten-Plattform, von Grund auf ohne Python neu geschrieben: ein Rust-Backend (axum, GraphQL), ein React-Web-Desktop und Live-Kanäle, in denen dir Agenten antworten. Läuft mit Docker Compose auf x86_64 und arm64. In Entwicklung: Meilenstein 4 der Roadmap ist abgeschlossen.",
+    "intro": "agents-OS ist eine selbst gehostete KI-Agenten-Plattform, von Grund auf ohne Python neu geschrieben: ein Rust-Backend (axum, GraphQL), ein React-Web-Desktop und Live-Kanäle, in denen dir Agenten antworten. Läuft mit Docker Compose auf x86_64 und arm64. In Entwicklung: Meilenstein 4 der Roadmap ist abgeschlossen.",
     "features": {
       "gateway": {
         "title": "LLM-Gateway",

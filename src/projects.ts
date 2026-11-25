@@ -53,7 +53,7 @@ cargo run -p launcher_desktop
 cd android && ./gradlew installDebug`,
   },
   {
-    name: "rust-agents",
+    name: "agents-OS",
     tags: ["Rust", "GraphQL", "LLM", "Docker"],
     shots: [],
     features: [
@@ -62,7 +62,7 @@ cd android && ./gradlew installDebug`,
       { key: "security", icon: "shield" },
       { key: "selfhost", icon: "layers" },
     ],
-    snippet: `git clone https://github.com/gallifree/rust-agents && cd rust-agents/deploy
+    snippet: `git clone https://github.com/gallifree/agents-OS && cd agents-OS/deploy
 cp .env.example .env   # fill in the secrets (commands are in the file)
 docker compose up -d --build
 # → http://localhost:8080`,

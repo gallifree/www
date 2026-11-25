@@ -32,7 +32,7 @@
     "dicturs": "Comandos de voz offline para o seu desktop: diga uma palavra-chave e o seu comando de shell é executado. Reconhecimento de voz com whisper.cpp, como CLI, TUI e aplicativo de desktop.",
     "llegion": "Um painel de controle nativo e rápido para o Ollama: execute, monitore, avalie e proteja seus modelos locais a partir de um aplicativo de desktop ou de um terminal.",
     "pimpbox-rgb": "Controle a iluminação OpenRGB a partir de um aplicativo de desktop ou de um terminal: pré-visualização ao vivo, pintura de LEDs, zonas e perfis.",
-    "rust-agents": "Uma plataforma de agentes de IA auto-hospedada e sem Python: backend em Rust, desktop web em React e um gateway LLM compatível com OpenAI, com Docker Compose.",
+    "agents-OS": "Uma plataforma de agentes de IA auto-hospedada e sem Python: backend em Rust, desktop web em React e um gateway LLM compatível com OpenAI, com Docker Compose.",
     "more": "Saiba mais"
   },
   "footer": {
@@ -126,9 +126,9 @@
       "0": "Tela inicial do rustart com uma grade de apps e uma barra de busca"
     }
   },
-  "rust-agents": {
+  "agents-OS": {
     "tagline": "Seus próprios agentes de IA, no seu próprio servidor.",
-    "intro": "rust-agents é uma plataforma de agentes de IA auto-hospedada, reescrita do zero sem Python: um backend em Rust (axum, GraphQL), um desktop web em React e canais ao vivo onde os agentes respondem. Roda com Docker Compose em x86_64 e arm64. Em desenvolvimento: a etapa 4 do roteiro está concluída.",
+    "intro": "agents-OS é uma plataforma de agentes de IA auto-hospedada, reescrita do zero sem Python: um backend em Rust (axum, GraphQL), um desktop web em React e canais ao vivo onde os agentes respondem. Roda com Docker Compose em x86_64 e arm64. Em desenvolvimento: a etapa 4 do roteiro está concluída.",
     "features": {
       "gateway": {
         "title": "Gateway LLM",
